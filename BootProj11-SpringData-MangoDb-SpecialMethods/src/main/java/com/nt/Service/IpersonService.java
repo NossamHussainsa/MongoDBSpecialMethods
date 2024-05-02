@@ -5,5 +5,6 @@ import java.util.List;
 import com.nt.Document.PersonDetails;
 
 public interface IpersonService {
-	List<PersonDetails>insertDetails(PersonDetails details);
+	List<PersonDetails>insertDetails(List<PersonDetails> details);
+	List<PersonDetails>getAllinfo();
 }

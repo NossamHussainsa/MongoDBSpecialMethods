@@ -15,8 +15,8 @@ import lombok.RequiredArgsConstructor;
 
 @Document
 @Data
-@AllArgsConstructor
-@RequiredArgsConstructor
+//@AllArgsConstructor
+//@RequiredArgsConstructor
 public class PersonDetails {
 	@Id
 	private String id;
