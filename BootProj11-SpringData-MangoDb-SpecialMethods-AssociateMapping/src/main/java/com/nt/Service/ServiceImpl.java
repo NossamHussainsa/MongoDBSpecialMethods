@@ -1,5 +1,7 @@
 package com.nt.Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,4 +26,9 @@ public String saveLicenceWithperson(Licence lc) {
 	// TODO Auto-generated method stub
 	return "licence is saved with the id:"+lrepo.save(lc).getLid();
 }
+	@Override
+	public List<Person> getallinfo() {
+		
+		return prepo.findAll();
+	}
 }

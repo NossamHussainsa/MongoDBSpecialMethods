@@ -23,7 +23,8 @@ private Iservice service;
 		li.setType("Two_wheler");
 		li.setExperiredate(LocalDateTime.of(2040, 05, 07, 05, 20));
 		per.setLicence(li);
-		System.out.println(service.savepersonWithLicence(per));;
+		//System.out.println(service.savepersonWithLicence(per));;
+		service.getallinfo().forEach(info->{System.out.println(info);});
 
 	}
 
