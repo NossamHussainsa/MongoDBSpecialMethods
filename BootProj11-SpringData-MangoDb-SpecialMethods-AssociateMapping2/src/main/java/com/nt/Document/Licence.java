@@ -10,14 +10,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 @Document
-@AllArgsConstructor
-@RequiredArgsConstructor
 @Data
 public class Licence implements Serializable {
 	@Id
-	private Integer Lid;
+	private Integer lid;
 	private String type;
 	private LocalDateTime experiredate;
 	private Person person;
-
 }

@@ -9,8 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 @Document
-@AllArgsConstructor
-@RequiredArgsConstructor
 @Data
 public class Person implements Serializable {
 	@Id
@@ -18,7 +16,6 @@ public class Person implements Serializable {
 	private String name;
 	private String adress;
 	private Long adhar;
-	private Licence licence;
-	
+	private Licence licence;	
 
 }
