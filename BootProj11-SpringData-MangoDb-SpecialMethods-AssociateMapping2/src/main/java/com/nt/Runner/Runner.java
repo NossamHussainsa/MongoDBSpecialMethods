@@ -39,7 +39,8 @@ private Iservice service;
 		li.setExperiredate(LocalDateTime.of(2040, 05, 07, 05, 20));
 	//	per.setLicence(li);
 		li.setPerson(per);
-		System.out.println(service.saveLicenceWithperson(li));;
+	//	System.out.println(service.saveLicenceWithperson(li));;
+		service.getallinfo().forEach(info->{System.out.println(info);});
 	}
 
 }

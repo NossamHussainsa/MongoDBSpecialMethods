@@ -28,7 +28,6 @@ public String saveLicenceWithperson(Licence lc) {
 }
 	@Override
 	public List<Person> getallinfo() {
-		
 		return prepo.findAll();
 	}
 }
