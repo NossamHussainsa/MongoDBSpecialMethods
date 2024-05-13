@@ -9,4 +9,8 @@ public interface ICustService {
 	List<CustomerData>getCustomerByCountry(String country);
 	List<Object[]>getCustomersCountry(String country);
 	List<Object[]>getCustomersBySlaray(Integer sa1,Integer sal2);
+	List<Object[]>getCustomersBySlaray(Integer sa1);
+	List<CustomerData>getCustomerCountryByExpression(String country);
+	List<CustomerData>getCustomerJobByExpression(String Job);
+	int getCustomerByHikel(Double Hike);
 }

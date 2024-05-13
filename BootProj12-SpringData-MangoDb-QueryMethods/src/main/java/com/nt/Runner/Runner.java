@@ -31,17 +31,21 @@ private ICustService service;
 		cust2.setJobDestination("javaDeveloper");cust2.setHike(1500.23);
 		//service.insertData(List.of(cust,cust1,cust2,cust3));
 		//service.getCustomerByCountry("India").forEach(data->System.out.println(data));
+		
 		/*
 		 * service.getCustomersCountry("Iran").forEach(data->{ for(Object info:data) {
 		 * System.out.print(info+" "); } System.out.println(); });
 		 */
-		service.getCustomersBySlaray(50000,25000).forEach(data->{
-			for(Object info:data)
-			{
-				System.out.print(info+" ");
-			}
-			System.out.println();
-		});
-	}
+		 
+		/*
+		 * service.getCustomersBySlaray(25000).forEach(data->{ for(Object info:data) {
+		 * System.out.print(info+" "); } System.out.println(); });
+		 */
+		  service.getCustomersBySlaray(5000,25000).forEach(data->{ for(Object
+				  info:data) { System.out.print(info+" "); } System.out.println(); });
+		 
+		//service.getCustomerCountryByExpression("^I").forEach(data->System.out.println(data));
+		//service.getCustomerJobByExpression("d$").forEach(data->System.out.println(data));
+		}
 
 }
